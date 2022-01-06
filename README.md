@@ -30,9 +30,9 @@ load the practice into codesandbox.
 - In the url of the starter repo, append `box` to the word `github` and hit
   `Enter` or `return` depending on your computer. You should be taken to
   [codesandbox.io] and the app should be loaded for you.
-- Example: If the repo was
-  `https://github.com/reduxjs/redux/tree/master/examples/todomvc`, it would
-  become `https://githubbox.com/reduxjs/redux/tree/master/examples/todomvc`
+- Example: To load the repo at
+  `https://github.com/appacademy/functional-component-jsx` into codesandbox, you
+  would go to `https://githubbox.com/appacademy/functional-component-jsx`.
 
 ### Option 2
 
@@ -136,8 +136,9 @@ Inside the opening and closing tags, add an `<h1>` tag that says,
 Now test it in the browser by changing the portion of the address in your url
 after `localhost:3000` to `/movies` or `/stocks`.
 
-Notice that 'Page Not Found' is always there no matter which component is
-being mounted? You cannot use `exact` in this instance because the `Route` has no `path`.
+Notice that 'Page Not Found' is always there no matter which component is being
+mounted? You cannot use `exact` in this instance because the `Route` has no
+`path`.
 
 Instead, import the `Switch` component from `react-router-dom`. Now wrap all of
 your `Route` components with a single `Switch` component.
@@ -150,14 +151,14 @@ rendered.
 
 ## What you have learned
 
-**Congratulations!** In this practice you have learned:
+**Congratulations!** In this practice you have learned how to
 
-1. Using `BrowserRouter` to enable React Router in the entire application
-2. Using the `Route` component to set up paths for components to be mounted
-3. Nesting components inside the `Route` component to be rendered based
+1. Use `BrowserRouter` to enable React Router in the entire application
+2. Use the `Route` component to set up paths for components to be mounted
+3. Nest components inside the `Route` component to be rendered based
    on the chosen path
-4. Adding the `exact` attribute to certain paths to enforce strict matching
-5. Wrapping the `Route` components in a `Switch` component so that React will
+4. Add the `exact` attribute to certain paths to enforce strict matching
+5. Wrap the `Route` components in a `Switch` component so that React will
    stop at the first matching choice it finds
 
 [codesandbox.io]: https://codesandbox.io
