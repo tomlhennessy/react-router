@@ -17,28 +17,10 @@ description.
 For this first practice, you will learn how to setup a Router and create routes
 that will allow you to later navigate to different components.
 
-## Set up
+## Setup
 
-Make sure you are logged in to your [codesandbox.io] account.
-
-Navigate to the starter repo for this short practice by clicking the `Download
-Project` button at the bottom of the page. Use one of the following options to
-load the practice into codesandbox.
-
-### Option 1 (the simplest option)
-
-- In the url of the starter repo, append `box` to the word `github` and hit
-  `Enter` or `return` depending on your computer. You should be taken to
-  [codesandbox.io] and the app should be loaded for you.
-- Example: To load the repo at
-  `https://github.com/appacademy/functional-component-jsx` into codesandbox, you
-  would go to `https://githubbox.com/appacademy/functional-component-jsx`.
-
-### Option 2
-
-- Navigate to [codesandbox.io] and sign in. Click `Create Sandbox`, then choose
-  `Import Project` from the sidebar. Paste the link to the starter repo and
-  click `Import and Fork`.
+Click the `Download Project` button at the bottom of this page to go to the
+starter repo, then load the repo into [CodeSandbox].
 
 ## Preparation
 
@@ -130,10 +112,10 @@ Now test again in the browser. Notice the difference?
 ## Adding a `Switch` component
 
 Below the other `Route` components, add another `Route` component with no path.
-Inside the opening and closing tags, add an `<h1>` tag that says,
-`Page Not Found`.
+Inside the opening and closing tags, add an `<h1>` tag with the text 'Page Not
+Found'.
 
-Now test it in the browser by changing the portion of the address in your url
+Now test it in the browser by changing the portion of the address in your URL
 after `localhost:3000` to `/movies` or `/stocks`.
 
 Notice that 'Page Not Found' is always there no matter which component is being
@@ -161,7 +143,7 @@ rendered.
 5. Wrap the `Route` components in a `Switch` component so that React will
    stop at the first matching choice it finds
 
-[codesandbox.io]: https://codesandbox.io
+[CodeSandbox]: https://codesandbox.io
 [router-v5]: https://v5.reactrouter.com/web/guides/quick-start
 [router-v5-browserouter]: https://v5.reactrouter.com/web/api/BrowserRouter
 [router-v5-route]: https://v5.reactrouter.com/web/api/Route
