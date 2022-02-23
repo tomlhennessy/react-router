@@ -98,10 +98,10 @@ at this point.
 Next, do the same for the `Stocks` and `Movies` components, specifying `path`s
 of `/stocks` and `/movies`, respectively.
 
-Take a look in your browser. In your address bar, after the `localhost:3000`,
-add `/stocks` to the address bar and notice what you see. Now, replace `/stocks`
-with `/movies`. Notice that the `Home` component is always mounted? This is not
-the desired functionality.
+Take a look in your sandbox browser. In the address bar, append `/stocks` to the 
+original URL and notice what you see. Now, replace `/stocks` with `/movies`.
+Notice that the `Home` component is always mounted? This is not the desired
+functionality.
 
 To fix this, add the `exact` attribute inside the `Route` for the `Home`
 component. This will signify that the `Home` component should be rendered only
@@ -115,8 +115,8 @@ Below the other `Route` components, add another `Route` component with no path.
 Inside the opening and closing tags, add an `<h1>` tag with the text 'Page Not
 Found'.
 
-Now test it in the browser by changing the portion of the address in your URL
-after `localhost:3000` to `/movies` or `/stocks`.
+Now test it in your sandbox browser by appending `/movies` or `/stocks` to the
+original URL.
 
 Notice that 'Page Not Found' is always there no matter which component is being
 mounted? You cannot use `exact` in this instance because the `Route` has no
@@ -125,11 +125,11 @@ mounted? You cannot use `exact` in this instance because the `Route` has no
 Instead, import the `Switch` component from `react-router-dom`. Now wrap all of
 your `Route` components with a single `Switch` component.
 
-Test again in the browser. Notice that 'Page Not Found' does not show.
+Test again in your sandbox browser. Notice that 'Page Not Found' does not show.
 
-Now test the `Page Not Found` route. Try going to
-`http://localhost:3000/potato`. Notice that the 'Page Not Found' text is now
-rendered.
+Now test the `Page Not Found` route. Try going to another route by appending
+`/potato` to the end of the original URL. Notice that the 'Page Not Found' text
+is now rendered.
 
 ## What you have learned
 
